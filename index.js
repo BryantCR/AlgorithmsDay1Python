@@ -6,13 +6,22 @@ Given an array, find and print its largest number.
 [-5, -10, -20, -23, -2, -6] = -2
 */
 
-function printMax(arr){
+function maxnum (arr){
+    
     let max = arr[0];
-    for(let i = 0; i < arr.length; i++){
-        
+
+    for (let i = 0; i<arr.length; i++ ){
+        if(arr[i] > max){
+            max = arr[i];
+        }
     }
+
+    return max;
 }
-printMax([10, -20, 100, 37, -13, 88]);
+
+
+console.log("The largest number is:",maxnum ([10,-20,100,37,-13,88]))
+
 
 /*2. Find if a number is prime or not
 isPrime( num )
